@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <script>
+      var login = prompt("Who's there?", "");
+      var password;
+
+      if (login == "Admin") {
+        // alert("Password");
+        password = prompt("Password?", "");
+        if (password == "TheMaster") {
+          alert("Welcome!");
+        } else if (password == "" || password == "Other") {
+          alert("Wrong password");
+        } else {
+          alert("Canceled");
+        }
+      } else if (login == "" || login == null) {
+        alert("I don't know you");
+      } else {
+        alert("Canceled");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Task 2</h1>
+  </body>
+</html>
