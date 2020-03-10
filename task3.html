@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <script>
+      var login = prompt("Who's there?", "");
+      var password;
+
+      switch (login) {
+        case "Admin":
+          password = prompt("Password", "");
+          switch (password) {
+            case "TheMaster":
+              alert("Welcome");
+              break;
+            case "":
+            case "Other":
+              alert("Wrong password");
+              break;
+            default:
+              alert("Canceled");
+          }
+        case "":
+        case null:
+          alert("I don't know you");
+          break;
+        default:
+          alert("Canceled");
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Task 3</h1>
+  </body>
+</html>
